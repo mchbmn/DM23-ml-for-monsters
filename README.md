@@ -13,7 +13,22 @@ Materials for the class.
     5. launch a terminal
     6. `git clone git clone https://oauth-key-goes-here@github.com/username/DM23-ml-for-monsters.git`
 
+Next we will set the original repo as the `remote` `upstream` source of truth:
+
+```
+git remote add upstream https://github.com/deepmay/DM23-ml-for-monsters
+```
+
+This will allow us to (so-to-speak) "sync" our forked version of the repo with the original
+
 ### In the morning
+
+First we need to check for changes to the DeepMay version of the repo
+
+```
+git fetch upstream main
+```
+
     1. `git fetch origin`
     2. `git merge --ff-only origin main`
 
